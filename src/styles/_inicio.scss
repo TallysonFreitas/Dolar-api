@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+@mixin title($tamanho:40px){
+    font-size: $tamanho;
+    color: variaveis.$corDaFonte;
+    margin-bottom: 8px;
+}
+
+.Inicio{
+    padding-top: 32px;
+    margin-bottom: 32px;
+
+    .container{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__titulo{
+        @include title(32px);
+    }
+
+    &__texto{
+        background-color: variaveis.$corDaBordaCabecalho;
+        padding: 16px;
+        border-radius: 8px;
+
+        &--item{
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        &--img{
+            margin: 0 auto;
+            display: block;
+            border-radius: 8px;
+        }
+    }
+}

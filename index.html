@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolar - Agora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles/main.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="cabecalho__titulo">Dolar</h1>
+        </div>
+    </header>
+    <section class="Inicio">
+        <div class="container">
+            <h2 class="Inicio__titulo">Como o dolar surgiu</h2>
+            <div class="Inicio__texto">
+                <p class="Inicio__texto--item">
+                O dólar tornou-se uma unidade monetária por decisão do Congresso dos EUA em 1785. Sua base era a piastra-do-lera da América Latina, cujo nome deriva do thaler alemão. No sistema do padrão-ouro, que prevaleceu até a I Guerra Mundial, as moedas, definidas por um peso em ouro, podiam ser convertidas livremente nesse metal. Os países que aderiam a esse sistema deviam manter reservas de ouro suficientes para garantir a conversão de suas moedas. No sistema de padrão-ouro de câmbio, as reservas consistem essencialmente em divisas que, por sua vez, podem ser convertidas em ouro.
+                </p>
+                <img class="Inicio__texto--img" src="https://assets.mundovestibular-homolog.quero.space/wp-content/uploadedfiles/interspire/dollar.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="cotacao">
+        <div class="container">
+            <h2 class="cotacao__titulo">Cotacao atual do dolar</h2>
+            <div class="cotacao__valor">
+                <h3 class="cotacao__valor--item">O dolar vale <span id="dolar"></span> </h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/scripts/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="src/scripts/api.js"></script>
+</body>
+</html>

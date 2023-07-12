@@ -1,0 +1,37 @@
+@use 'variaveis';
+@use 'inicio';
+@use 'cotacao';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif ;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background-color: variaveis.$fundo;
+}
+
+.cabecalho{
+    background-color: variaveis.$corDoCabecalho;
+    border-bottom: 8px solid variaveis.$corDaBordaCabecalho;
+
+    .container{
+        height: 70px;
+    }
+
+    &__titulo{
+        color: variaveis.$corDaFonte;
+        font-size: 48px;
+    }
+}
+
